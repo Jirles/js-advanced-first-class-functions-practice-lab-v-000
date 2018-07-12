@@ -7,7 +7,9 @@ function logDriverNames(driverArray) {
 const logDriversByHometown = function (hometown) {
   function (driverArray) {
     driverArray.forEach(function (element) {
-      if (element)
+      if (element.hometown === hometown) {
+        console.log(element.name);
+      }
     });
   };
 };
