@@ -21,4 +21,5 @@ function logDriversByHometown (driversArray, hometown) {
         return num1 - num2;
       }
     );
+    return result;
   };
