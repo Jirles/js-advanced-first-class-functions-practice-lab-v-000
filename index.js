@@ -15,5 +15,5 @@ function logDriversByHometown (driverArray, hometown) {
   };
 
   function driversByRevenue(driversArray){
-    const result = [...driversArray]
+    const result = [...driversArray];
   };
