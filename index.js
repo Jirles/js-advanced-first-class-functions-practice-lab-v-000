@@ -34,6 +34,9 @@ function logDriversByHometown (driversArray, hometown) {
   return result;
   };
 
-  function totalRevenue() {
-
+  function totalRevenue(driversArray) {
+    const cb = function (agg, el, i, arr) {
+      return agg += el.revenue;
+    };
+    return driversArray.reduce(cb, 0);
   };
