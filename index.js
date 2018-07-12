@@ -14,34 +14,34 @@ function logDriversByHometown (driversArray, hometown) {
     );
   };
 
-  function driversByRevenue(driversArray){
-    const result = [...driversArray];
-    result.sort(
-      function(obj1, obj2) {
-        return obj1.revenue - obj2.revenue;
-      }
-    );
-    return result;
-  };
-
-  function driversByName(driversArray){
-    const result = [...driversArray];
-    result.sort(
-      function(obj1, obj2) {
-        return obj1.name.localeCompare(obj2.name);
-      }
-    );
+function driversByRevenue(driversArray){
+  const result = [...driversArray];
+  result.sort(
+    function(obj1, obj2) {
+      return obj1.revenue - obj2.revenue;
+    }
+  );
   return result;
-  };
+};
 
-  function totalRevenue(driversArray) {
-    const cb = function (agg, el, i, arr) {
-      return agg += el.revenue;
-    };
-    return driversArray.reduce(cb, 0);
-  };
+function driversByName(driversArray){
+  const result = [...driversArray];
+  result.sort(
+    function(obj1, obj2) {
+      return obj1.name.localeCompare(obj2.name);
+    }
+  );
+return result;
+};
 
-  function averageRevenue(driversArray) {
-    const totalRevenue =  totalRevenue(driversArray);
-    return totalRevenue / driversArray.size;
+function totalRevenue(driversArray) {
+  const cb = function (agg, el, i, arr) {
+    return agg += el.revenue;
   };
+  return driversArray.reduce(cb, 0);
+};
+
+function averageRevenue(driversArray) {
+  const totalRevenue =  totalRevenue(driversArray);
+  return totalRevenue / driversArray.size;
+};
