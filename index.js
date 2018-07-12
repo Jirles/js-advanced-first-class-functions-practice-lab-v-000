@@ -10,6 +10,6 @@ function logDriversByHometown (driverArray, hometown) {
         if (element.hometown === hometown) {
           console.log(element.name);
         }
-      }
+      };
     );
   };
