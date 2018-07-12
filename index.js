@@ -24,6 +24,6 @@ function logDriversByHometown (driversArray, hometown) {
     return result;
   };
 
-  function driversByName(){
-
+  function driversByName(driversArray){
+    const result = [...driversArray];
   };
