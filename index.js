@@ -26,4 +26,9 @@ function logDriversByHometown (driversArray, hometown) {
 
   function driversByName(driversArray){
     const result = [...driversArray];
+    result.sort(
+      function(obj1, obj2) {
+        return obj1.name < obj2.name;
+      }
+    )
   };
