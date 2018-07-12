@@ -41,6 +41,6 @@ function logDriversByHometown (driversArray, hometown) {
     return driversArray.reduce(cb, 0);
   };
 
-  function averageRevenue() {
-    
+  function averageRevenue(driversArray) {
+
   };
