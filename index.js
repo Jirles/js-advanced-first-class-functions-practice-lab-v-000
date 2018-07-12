@@ -23,3 +23,7 @@ function logDriversByHometown (driversArray, hometown) {
     );
     return result;
   };
+
+  function driversByName(){
+
+  };
