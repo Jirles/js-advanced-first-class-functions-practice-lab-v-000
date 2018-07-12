@@ -28,7 +28,7 @@ function logDriversByHometown (driversArray, hometown) {
     const result = [...driversArray];
     result.sort(
       function(obj1, obj2) {
-        return obj1.name < obj2.name;
+        return obj1.name.localeCompare(obj2.name);
       }
     );
   return result;
