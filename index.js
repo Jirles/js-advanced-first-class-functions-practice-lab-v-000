@@ -42,5 +42,6 @@ function logDriversByHometown (driversArray, hometown) {
   };
 
   function averageRevenue(driversArray) {
-
+    const totalRevenue =  totalRevenue(driversArray);
+    return totalRevenue / driversArray.size;
   };
